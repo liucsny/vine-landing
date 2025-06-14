@@ -1,0 +1,25 @@
+FROM node:20-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Install pnpm globally
+RUN npm install -g pnpm@8.7.6
+
+# Set a consistent store directory to avoid PNPM store mismatch issues
+RUN pnpm config set store-dir /app/.pnpm-store
+
+# Copy only the package manager files for dependency installation
+COPY package*.json pnpm-lock.yaml ./
+
+# Install dependencies (use --frozen-lockfile for reproducible builds)
+RUN pnpm install --frozen-lockfile
+
+# Copy the rest of the project files
+COPY . .
+
+# Expose the development port
+EXPOSE 3000
+
+# Default command
+CMD ["pnpm", "dev"]
