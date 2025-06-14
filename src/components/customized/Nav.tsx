@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Nav() {
     return (
-        <nav className="flex items-center justify-between w-full px-6 py-3 absolute top-0 left-0">
+        <nav className="flex items-center justify-between w-full px-6 py-3 absolute top-0 left-0 z-50">
             <div className="flex items-center gap-14">
                 <Logo />
                 <ul className="flex items-center gap-7 text-sm text-gray-600 font-medium">
@@ -16,7 +16,7 @@ export default function Nav() {
             </div>
             <div className="flex items-center gap-3">
                 {/* <Button className="text-sm text-gray-900 font-medium bg-gray-300/30 hover:bg-gray-300/80 px-4 py-1.5 rounded-md">Login</Button> */}
-                <Button variant="secondary">Login</Button>
+                <Button variant="secondary" size="sm">Login</Button>
             </div>
         </nav>
     );
