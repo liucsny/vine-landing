@@ -27,8 +27,8 @@ export default function Landing() {
                         <Image src="/vine-logo.svg" alt="Vine" width={50} height={50} />
                     </div>
                     <div className="flex flex-col items-center mt-4">
-                        <h1 className="font-bold text-[42px] text-gray-800">Meet Vine - The Smarter Way to Use AI</h1>
-                        <p className="text-gray-500 text-base max-w-[510px] text-center">Discover a powerful AI platform built for clarity, speed, and ease — so you can focus on what matters.</p>
+                        <h1 className="font-bold text-[42px] max-w-[840px] text-center leading-14 text-gray-800 mb-4">Vine - The End-to-End Platform for Actionable Content Intelligence</h1>
+                        <p className="text-gray-500 text-base max-w-[864px] text-center">From rapid model creation with a few examples to full workflow automation, Vine gives your team the power to understand and act on content in 30 minutes, not in weeks.</p>
                     </div>
                     <div className="flex items-center gap-4 mt-4">
                         <Button size="lg" className="shadow-lg shadow-[#4274E4]/30">Get Started</Button>
