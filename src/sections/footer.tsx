@@ -6,7 +6,7 @@ export default function Footer() {
             <div className="max-w-[1200px] mx-auto px-8">
                 <div className="flex justify-between border-t border-gray-100 py-6">
                     <Logo />
-                    <p className="text-sm text-gray-500">Copyright © 2023 Vine. All Rights Reserved.</p>
+                    <p className="text-sm text-gray-500">Copyright © 2025 Vine. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>
